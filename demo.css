@@ -1,0 +1,370 @@
+ * {
+     border: none;
+     margin: 0;
+     padding: 0;
+     font-family: 'Quicksand', sans-serif;
+     box-sizing: border-box
+ }
+ 
+ html {
+     width: 100%;
+     height: 100%;
+ }
+ 
+ body {
+     width: 100%;
+     height: 100%;
+     background-color: #D8DCDF;
+     margin: 0;
+ }
+ /* Style the navigation bar */
+ 
+ .navbar {
+     width: 100%;
+     background-color: #818e96;
+     overflow: hidden;
+ }
+ /* Navbar links */
+ 
+ .navbar a {
+     float: left;
+     text-align: center;
+     padding: 12px;
+     color: rgb(8, 8, 8);
+     text-decoration: none;
+     font-size: 20px;
+ }
+ /* Navbar links on mouse-over */
+ 
+ .navbar a:hover,
+ .dropdown:hover .dropbtn {
+     background-color: rgba(71, 119, 250, 0.849);
+ }
+ /* Current/active navbar link */
+ 
+ .active {
+     background-color: #37c0d8;
+ }
+ 
+ .navbar a.active {
+     background-color: #FF7200;
+     color: white;
+ }
+ /* The dropdown container */
+ 
+ .dropdown {
+     float: left;
+     overflow: hidden;
+ }
+ /* Dropdown button */
+ 
+ .dropdown .dropbtn {
+     font-size: 20px;
+     border: none;
+     outline: none;
+     color: black;
+     padding: 12px;
+     background-color: inherit;
+     font-family: 'Quicksand', sans-serif;
+     /* Important for vertical align on mobile phones */
+     margin: 0;
+     /* Important for vertical align on mobile phones */
+ }
+ /* Dropdown content (hidden by default) */
+ 
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+ }
+ /* Links inside the dropdown */
+ 
+ .dropdown-content a {
+     float: none;
+     color: black;
+     padding: 12px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+ }
+ /* Add a grey background color to dropdown links on hover */
+ 
+ .dropdown-content a:hover {
+     background-color: #ddd;
+ }
+ /* Show the dropdown menu on hover */
+ 
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
+ 
+ .bg-img {
+     /* The image used */
+     background-image: url("https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80");
+     min-height: 650px;
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* Needed to position the navbar */
+     position: relative;
+     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80");
+     /* Set a specific height */
+     height: 50%;
+     /* Position and center the image to scale nicely on all screens */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+ }
+ /* Place text in the middle of the image */
+ 
+ .hero-text {
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: white;
+     font-size: 3rem;
+ }
+ 
+ .hero-text button {
+     border: none;
+     outline: 0;
+     display: inline-block;
+     padding: 10px 25px;
+     color: black;
+     background-color: #ddd;
+     text-align: center;
+     cursor: pointer;
+     text-decoration: none;
+ }
+ 
+ .hero-text button:hover {
+     background-color: #555;
+     color: white;
+ }
+ 
+ .navbar input[type="text"] {
+     float: right;
+     padding: 6px;
+     border: none;
+     margin-top: 8px;
+     margin-right: 16px;
+     font-size: 17px;
+     border: 1px solid rgb(7, 7, 7);
+ }
+ /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 600 pixels */
+ 
+ @media screen and (max-width: 600px) {
+     .navbar a,
+     .navbar input[type="text"] {
+         float: none;
+         display: block;
+         text-align: left;
+         width: 100%;
+         margin: 0;
+         padding: 14px;
+     }
+     .navbar input[type="text"] {
+         border: 1px solid #ccc;
+     }
+     div.hero-text {
+         font-size: 2rem;
+     }
+     .contact,
+     .login,
+     .search_type,
+     .dropdown {
+         display: none;
+     }
+ }
+ /* ------------------ SECTION 2 ---------------------------------------------*/
+ 
+ .large-font {
+     padding-bottom: 40px;
+ }
+ 
+ .container {
+     padding: 64px;
+ }
+ /* Clear floats */
+ 
+ .row:after {
+     content: "";
+     display: table;
+     clear: both
+ }
+ /* 2/3 column */
+ 
+ .column-66 {
+     float: left;
+     width: 66.66666%;
+     padding: 10px;
+ }
+ /* 1/3 column */
+ 
+ .column-33 {
+     float: left;
+     width: 33.33333%;
+     padding: 10px;
+ }
+ 
+ .button {
+     border: none;
+     color: white;
+     padding: 14px 28px;
+     font-size: 16px;
+     cursor: pointer;
+     background-color: #818E96;
+     margin-top: 10px;
+ }
+ 
+ .large-font {
+     font-size: 48px;
+ }
+ 
+ img {
+     display: block;
+     height: auto;
+     max-width: 100%;
+ }
+ 
+ .column-66 button:hover {
+     background-color: #555;
+     color: white;
+ }
+ /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+ 
+ @media screen and (max-width: 600px) {
+     .column-66,
+     .column-33 {
+         width: 100%;
+         text-align: center;
+     }
+ }
+ /* /////////////////////// SECTION 3///////////////////////////////// */
+ /* Create two equal columns that floats next to each other */
+ 
+ .column_left {
+     float: left;
+     width: 30%;
+     padding: 10px;
+ }
+ 
+ .column_right {
+     float: right;
+     width: 70%;
+     padding: 10px;
+ }
+ 
+ .column_left,
+ .column_right {
+     background-color: #303131;
+     padding-bottom: 100px;
+     padding-top: 20px;
+     color: white;
+ }
+ /* Clear floats after the columns */
+ 
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+ 
+ .w3-row:after,
+ .w3-row:before {
+     content: "";
+     display: table;
+     clear: both
+ }
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ 
+ @media screen and (max-width: 600px) {
+     .column_left,
+     .column_right {
+         width: 100%;
+     }
+     .w3-col.m7 {
+         width: 58.33333%
+     }
+     .w3-col.m5 {
+         width: 41.66666%
+     }
+ }
+ /* -------------- footer 1 ---------------- */
+ /* Add padding to containers */
+ 
+ .register_ft {
+     padding: 16px;
+     background-color: #818E96;
+     color: black;
+ }
+ /* Full-width input fields */
+ 
+ .register_ft input[type=text],
+ .register_ft input[type=password] {
+     width: 100%;
+     padding: 15px;
+     margin: 5px 0 22px 0;
+     display: inline-block;
+     border: none;
+     background: #f1f1f1;
+ }
+ 
+ .register_ft input[type=text]:focus,
+ .register_ft input[type=password]:focus {
+     background-color: #ddd;
+     outline: none;
+ }
+ /* Overwrite default styles of hr */
+ 
+ .register_ft hr {
+     border: 1px solid #f1f1f1;
+     margin-bottom: 25px;
+ }
+ /* Set a style for the submit/register button */
+ 
+ .registerbtn {
+     background-color: #ff8b10;
+     color: white;
+     padding: 16px 20px;
+     margin: 8px;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+     opacity: 0.9;
+ }
+ 
+ .registerbtn:hover {
+     opacity: 1;
+ }
+ /* Add a blue text color to links */
+ 
+ .register_ft a {
+     color: rgb(15, 15, 236);
+ }
+ /* Set a grey background color and center the text of the "sign in" section */
+ 
+ .signin {
+     text-align: center;
+     padding-top: 5px;
+     padding-bottom: 80px;
+ }
+ /* --------------------- footer 2 -------------- */
+ 
+ .footer_2 {
+     text-align: center;
+     padding-top: 10px;
+     padding-bottom: 100px;
+ }
+ 
+ hr {
+     border: 1px solid #1a1919;
+ }
